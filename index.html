@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img id="logo" src="./images/todo1.png">
+    <div id="main">
+        <div class="alternatingtext" >
+            <p class="text">Organized</p>
+            <p class="text">Creative</p>
+        </div>
+        <!-- <h1>Your To-Do is here !</h1> -->
+        <h1>Stay </h1>
+        <input id="taskinput" type="text" placeholder="Enter Your Task">
+
+        <div id="content">
+            <input  type="button" id="add" value="Add Task" onclick="addtask()">
+            <input type="button" id="delete" value="Delete Task" onclick="deletetask()">
+            <input type="button" id="update" value ="Update Task" onclick="updatetask()">
+            
+        </div>
+        <ul id="tasklist"></ul>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="style.js"></script>
+    <footer>
+        <p>&copy; 2023 Built by ❤️ Ankit Kumar . All rights reserved.</p>
+    </footer>
+</body>
+</html>
